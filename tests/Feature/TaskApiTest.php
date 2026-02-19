@@ -11,14 +11,6 @@ class TaskApiTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_it_shows_a_hello_message(): void
-    {
-        $res = $this->getJson('/api/hello');
-
-        $res->assertOk()
-            ->assertExactJson(['message' => 'Hello Azure devops!']);
-    }
-
     public function test_it_lists_tasks(): void
     {
         Task::factory()->count(3)->create();

@@ -8,7 +8,3 @@ Route::get('/health', function () {
 });
 
 Route::apiResource('tasks', TaskController::class);
-
-Route::get('/hello', function () {
-    return response()->json(['message' => 'Hello Azure devops!']);
-});
