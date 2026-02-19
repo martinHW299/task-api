@@ -12,6 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         //testing new push to main branch
+        //testing new push to main branch
+        //testing new push to main branch
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
